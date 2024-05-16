@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FavoritePk extends Serializable {
+public class FavoritePk implements Serializable {
 
     @Column(name = "user_email")
     private String userEmail;
