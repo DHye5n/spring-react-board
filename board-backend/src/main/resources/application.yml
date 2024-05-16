@@ -1,2 +1,21 @@
 server:
   port: 9006
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boardproject?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 626512
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 110MB
+
+secret-key: S3cr3tK3y;
+
+file:
+  path: C:/fileUpload/
+  url: http://localhost:9006/file
